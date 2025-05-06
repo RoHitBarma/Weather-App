@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name">
+        <button><img src="images/magnifineGlass-removebg-preview.png" alt=""></button>
+      </div>
+
+      <div class="error">
+        Invalid Place Name.
+      </div>
+      
+      <div class="weather">
+        <img src="images/rain.png" alt="" class="weatherIcon" id="mainWeatherIcon">
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">Place</h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="Humidity" class="weatherIcon">
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="wind" class="weatherIcon">
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>wind</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
